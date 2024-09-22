@@ -1,0 +1,30 @@
+.menu {
+  border-radius: var(--br-2);
+  padding: var(--p-1);
+  background-color: var(--primary-color-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--menu-item-size);
+  border-radius: var(--br-1);
+  height: var(--menu-item-size);
+  text-align: center;
+  padding: var(--p-1);
+}
+.menu a img {
+  transition: var(--t-0);
+}
+.menu a.active {
+  background-color: var(--primary-color-slightdark);
+}
+
+.menu a.active img {
+  transform: scale(1.1);
+}

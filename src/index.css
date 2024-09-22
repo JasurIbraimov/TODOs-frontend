@@ -1,0 +1,108 @@
+:root {
+  /* COLORS */
+  --primary-color: #252b42;
+  --primary-color-dark: #1a2036;
+  --primary-color-slightdark: #242b42;
+  --primary-color-light: #2e3650;
+
+  --text-color: #b1b9d8;
+  --secondary-color: #8e66ff;
+
+  /* SIZES */
+  --menu-item-size: 4rem;
+  --icon-btn-size: 3.5rem;
+  --todo-card-height: 15rem;
+
+  /* PADDINGS */
+  --p-0_5: 0.5rem;
+  --p-1: 1rem;
+  --p-2: 1.5rem;
+  --p-3: 2rem;
+
+  /* MARGINS */
+  --m-1: 1rem;
+  --m-4: 3rem;
+
+  /* BORDER RADIUS */
+  --br-1: 1rem;
+  --br-2: 1.5rem;
+  --br-3: 2rem;
+
+  /* TRANSITIONS */
+  --t-0: 0.3s;
+  --t-1: 1s;
+
+  /* FONT SIZE */
+  --base-font: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: var(--base-font);
+}
+
+#root {
+  background-color: var(--primary-color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: var(--p-3);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p, label, span {
+  font-size: 1rem;
+}
+
+input, button, textarea {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+
+.main-btn {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  border-radius: var(--br-1);
+  background-color: var(--primary-color-slightdark);
+}

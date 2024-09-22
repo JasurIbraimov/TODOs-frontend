@@ -1,0 +1,8 @@
+.app {
+  background-color: var(--primary-color);
+  padding: var(--p-3);
+  display: flex;
+  border-radius: var(--br-3);
+  flex-grow: 1;
+  height: 100%;
+}

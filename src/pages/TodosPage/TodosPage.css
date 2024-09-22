@@ -1,0 +1,74 @@
+.layout-btn {
+  width: var(--icon-btn-size);
+  height: var(--icon-btn-size);
+  padding: var(--p-1);
+  border: 2px solid var(--primary-color-dark);
+}
+
+.layout-btn:first-child {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: 0px;
+}
+
+.layout-btn:last-child {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.layout-btn.active {
+  background-color: var(--primary-color-dark);
+}
+.layout-btn img {
+  transition: var(--t-0);
+}
+
+.layout-btn.active img {
+  transform: scale(1.1);
+}
+
+.create-btn {
+  padding: var(--p-1);
+}
+
+.todos {
+  margin-top: var(--m-4);
+}
+.todos.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, var(--todo-card-height));
+  gap: var(--p-2);
+}
+
+.todos.grid .todo {
+  flex-direction: column;
+}
+
+.todos.list .todo {
+  margin-top: var(--m-1);
+  justify-content: space-between;
+}
+
+.todos.list .todo.create {
+  justify-content: center;
+}
+
+.todo.create {
+  background-color: var(--primary-color-light);
+}
+
+.todo.create .create-btn {
+  width: var(--icon-btn-size);
+  height: var(--icon-btn-size);
+  border-radius: 50%;
+  border: none;
+}
+
+.todos.grid .todo.create p {
+  margin-top: var(--m-1);
+}
+
+.todos.list .todo.create p {
+  margin-left: var(--m-1);
+}
